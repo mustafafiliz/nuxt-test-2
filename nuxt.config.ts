@@ -33,8 +33,8 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'vercel',
     output: {
-      publicDir: './deploy/client',
-      dir: './deploy'
+      dir: '.output',
+      publicDir: '.output/public'
     },
     devProxy: {
       '^/api': {

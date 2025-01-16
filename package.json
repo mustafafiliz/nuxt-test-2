@@ -8,8 +8,7 @@
     "build:prod": "nuxt build && shx cp -r ssr dist",
     "dev": "nuxt dev --dotenv .env.development",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "prod": "nuxt build && pm2 restart ./ecosystem.config.cjs"
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "@element-plus/nuxt": "^1.1.0",
