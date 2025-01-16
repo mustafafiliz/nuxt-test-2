@@ -3,12 +3,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build && shx cp -r ssr dist",
+    "build": "nuxt build",
     "build:test": "nuxt build && shx cp -r ssr dist",
     "build:prod": "nuxt build && shx cp -r ssr dist",
     "dev": "nuxt dev --dotenv .env.development",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "prod": "nuxt build && pm2 restart ./ecosystem.config.cjs"
   },
   "dependencies": {
     "@element-plus/nuxt": "^1.1.0",

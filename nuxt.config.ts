@@ -31,7 +31,7 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2024-04-03',
   nitro: {
-    preset: 'firebase',
+    preset: 'vercel',
     output: {
       publicDir: './deploy/client',
       dir: './deploy'
